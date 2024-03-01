@@ -1,0 +1,134 @@
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ git config --global user.name “wrz-2003”
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ git config --global user.email “1935156976@qq.com”
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ git config --global user.name
+“wrz-2003”
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ git config --global user.email
+“1935156976@qq.com”
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ ^C
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ git config --global user.name "wrz-2003"
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ ^C
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ git config --global user.email "1935156976@qq.com"
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ git config --global user.name
+wrz-2003
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ git config --global user.email
+1935156976@qq.com
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ ssh-keygen -t rsa -C "1935156976@qq.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/sun/.ssh/id_rsa):
+Created directory '/c/Users/sun/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/sun/.ssh/id_rsa
+Your public key has been saved in /c/Users/sun/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:yDj+AY01lJ9Z/eo4KD7Cs1NC+YeMu3SyKcJ77uBUaCk 1935156976@qq.com
+The key's randomart image is:
++---[RSA 3072]----+
+|      ..   .     |
+|     ..   . .    |
+|     .o. +   .   |
+|  o o* o+     .  |
+|E+ o=++.S    .   |
+|o ..oo= .   .    |
+|.o .++o. . o     |
+|+.oo**o.. o .    |
+| +=+=Boo   .     |
++----[SHA256]-----+
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ ssh -T -git@github.com
+Warning: Identity file t@github.com not accessible: No such file or directory.
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
+           [-c cipher_spec] [-D [bind_address:]port] [-E log_file]
+           [-e escape_char] [-F configfile] [-I pkcs11] [-i identity_file]
+           [-J destination] [-L address] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-P tag] [-p port] [-R address]
+           [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
+           destination [command [argument ...]]
+       ssh [-Q query_option]
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ ssh -T git@github.com
+The authenticity of host 'github.com (20.205.243.166)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi wrz-2003! You've successfully authenticated, but GitHub does not provide shell access.
+
+sun@DESKTOP-FUV1DKV MINGW64 ~
+$ cd /E
+
+sun@DESKTOP-FUV1DKV MINGW64 /E
+$ cd /GitHub
+bash: cd: /GitHub: No such file or directory
+
+sun@DESKTOP-FUV1DKV MINGW64 /E
+$ cd GitHub
+
+sun@DESKTOP-FUV1DKV MINGW64 /E/GitHub
+$ git clone git@github.com:wrz-2003/SSPU.git
+Cloning into 'SSPU'...
+warning: You appear to have cloned an empty repository.
+
+sun@DESKTOP-FUV1DKV MINGW64 /E/GitHub
+$ cd SSPU
+
+sun@DESKTOP-FUV1DKV MINGW64 /E/GitHub/SSPU (main)
+$ ls
+测试.png
+
+sun@DESKTOP-FUV1DKV MINGW64 /E/GitHub/SSPU (main)
+$ git add "测试.png"
+
+sun@DESKTOP-FUV1DKV MINGW64 /E/GitHub/SSPU (main)
+$ git commit -m "第一次测试提交文件"
+[main (root-commit) 6647d22] 第一次测试提交文件
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "\346\265\213\350\257\225.png"
+
+sun@DESKTOP-FUV1DKV MINGW64 /E/GitHub/SSPU (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:wrz-2003/SSPU.git'
+
+sun@DESKTOP-FUV1DKV MINGW64 /E/GitHub/SSPU (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:wrz-2003/SSPU.git'
+
+sun@DESKTOP-FUV1DKV MINGW64 /E/GitHub/SSPU (main)
+$ ^C
+
+sun@DESKTOP-FUV1DKV MINGW64 /E/GitHub/SSPU (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 2.76 MiB | 1.17 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:wrz-2003/SSPU.git
+ * [new branch]      main -> main
