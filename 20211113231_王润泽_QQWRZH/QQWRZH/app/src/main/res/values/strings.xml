@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">QQ</string>
+    <string name="title_activity_index">MainActivity</string>
+    <string name="message">消息</string>
+    <string name="friends">通讯录</string>
+    <string name="news">朋友圈</string>
+    <string name="mine">我的</string>
+    <string name="deleteFriend">删除好友</string>
+    <string name="delete">删除</string>
+    <string name="addFriend">添加朋友</string>
+    <string name="help">查看状态</string>
+    <string name="delete_account">注销账户</string>
+    <string name="picture">更换头像</string>
+    <string name="music">Listen Music</string>
+</resources>
