@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.QQ.component.FriendsSlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="472dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/catalog"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:textColor="#FF000000"
+            android:textSize="20sp"
+            android:padding="0dp"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/friends_profile"
+            android:layout_below="@id/catalog" />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="412dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textColor="#DE000000"
+            android:textSize="25sp"
+            android:layout_marginLeft="60dp"
+            android:padding="10dp"
+            android:layout_below="@id/catalog"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/menu_friends"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/deleteFriend"
+        android:textSize="18sp" />
+</com.example.QQ.component.FriendsSlideLayout>
+
+
+
+
+
