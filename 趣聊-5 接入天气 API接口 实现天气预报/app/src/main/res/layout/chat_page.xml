@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ChatPage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/msg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputbackground"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msg_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorLightGray"
+        android:fitsSystemWindows="true" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLighterGray"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/msg_add"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:background="@drawable/addbtn"
+                android:layout_margin="5dp"
+                android:contentDescription="Add" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/inputbackground"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/msg_say"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:hint="输入你想说的话" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/msg_video"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="视频通话"
+                android:background="@drawable/video_icon"
+                android:layout_margin="5dp"
+                android:contentDescription="Video Call" />
+
+            <TextView
+                android:id="@+id/msg_send"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
